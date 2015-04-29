@@ -8,20 +8,20 @@
 	http://incident57.com/codekit/
 ================================================== */
 
-// @codekit-prepend "source/jquery.smooth-scroll.js";
+// @codekit-prepend "Library/jquery.smooth-scroll.js";
 
-// @codekit-prepend "source/bootstrap/transition.js";
-// @codekit-prepend "source/bootstrap/scrollspy.js";
-// @codekit-prepend "source/bootstrap/tab.js";
-// @codekit-prepend "source/bootstrap/tooltip.js";
-// @codekit-prepend "source/bootstrap/carousel.js";
-// @codekit-prepend "source/bootstrap/collapse.js";
-// @codekit-prepend "source/bootstrap/modal.js";
-// @codekit-prepend "source/bootstrap/dropdown.js";
-// @codekit-prepend "source/bootstrap/affix.js";
+// @codekit-prepend "Library/bootstrap/source/bootstrap/transition.js";
+// @codekit-prepend "Library/bootstrap/source/bootstrap/scrollspy.js";
+// @codekit-prepend "Library/bootstrap/source/bootstrap/tab.js";
+// @codekit-prepend "Library/bootstrap/source/bootstrap/tooltip.js";
+// @codekit-prepend "Library/bootstrap/source/bootstrap/carousel.js";
+// @codekit-prepend "Library/bootstrap/source/bootstrap/collapse.js";
+// @codekit-prepend "Library/bootstrap/source/bootstrap/modal.js";
+// @codekit-prepend "Library/bootstrap/source/bootstrap/dropdown.js";
+// @codekit-prepend "Library/bootstrap/source/bootstrap/affix.js";
 
-// @codekit-prepend "source/waypoints.js";
-// @codekit-prepend "source/waypoints-sticky.js";
+// @codekit-prepend "Library/waypoints.js";
+// @codekit-prepend "Library/waypoints-sticky.js"; 
 
 /*
 (function ($) {
