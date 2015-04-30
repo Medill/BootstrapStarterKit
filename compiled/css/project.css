@@ -6264,8 +6264,43 @@ header.navigation .divider-vertical {
 .navbar.navbar-default .navbar-brand {
   color: #FFF;
 }
+.navbar.navbar-default .navbar-nav {
+  margin-right: 25px;
+}
 .navbar.navbar-default .navbar-nav > li > a {
   color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 25px;
+}
+.navbar.navbar-default .navbar-nav > li.active > a {
+  color: #666666;
+  background-color: #FFF;
+}
+.navbar.navbar-default a.navbar-brand img {
+  width: 128px;
+  height: 128px;
+}
+.navbar.in-article {
+  background-color: #ffffff;
+}
+.navbar.in-article .navbar-brand {
+  color: #666666;
+}
+.navbar.in-article .navbar-nav {
+  margin-right: 0;
+}
+.navbar.in-article .navbar-nav > li > a {
+  color: #666666;
+  background-color: transparent;
+  margin-top: 0;
+}
+.navbar.in-article .navbar-nav > li.active > a {
+  color: #FFF;
+  background-color: #666666;
+}
+.navbar.in-article a.navbar-brand img {
+  width: 36px;
+  height: 36px;
 }
 #navbar-story {
   z-index: 1;

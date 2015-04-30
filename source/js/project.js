@@ -90,13 +90,8 @@ $(document).ready(function(){
 			}
 		});
 		
-		 
-		
-		
-		
-		
 		$('.enlarge').fluidbox({
-		 	viewportFill:0.85
+		 	viewportFill:0.8
 		});
 		
 	}
@@ -115,18 +110,15 @@ $(document).ready(function(){
 			$('#story-cover').height(_story_cover_height);
 		});
 
-		/*
+		
 		$('article').waypoint({
 			handler: function(direction) {
 			
 				if (direction === "up") {
-					//$('.story-cover-image').css("opacity", "1");
 					$('.story-cover-content').css("opacity", "1");
 					navbarChange(false);
 				}
 				if (direction === "down") {
-
-					//$('.story-cover-image').css("opacity", "0");
 					$('.story-cover-content').css("opacity", "0");
 					navbarChange(true);
 				}
@@ -134,7 +126,7 @@ $(document).ready(function(){
 			},
 			offset:100
 		});
-		*/
+		
 		$('.story-cover-arrow').click(function() {
 			$.smoothScroll({
 				scrollElement: $('body'),
@@ -145,23 +137,68 @@ $(document).ready(function(){
 	} else {
 		
 		$('#navbar-product').addClass('no-cover');
-		/*
+		
 		$('article').waypoint({
 			handler: function(direction) {
 			
 				if (direction == "down") {
-					$('#navbar-product').addClass('in-article');
+					$('#navbar').addClass('in-article');
 				} else if (direction == "up") {
-					$('#navbar-product').removeClass('in-article');
+					$('#navbar').removeClass('in-article');
 				}
 			 
 			},
 			offset:-2
 		});
-		*/
+		
 	}
 	
 	makeImagesZoomable();
+	
+	function navbarChange(in_article) {
+		var animate_props = {
+			
+		}
+		if (in_article) {
+			animate_props.opacity = "0";
+			animate_props.marginTop = "0";
+		} else {
+			animate_props.opacity = "1";
+			animate_props.marginTop = "-56px";
+		}
+		
+		$("#navbar").animate(animate_props, _speed/2, "easeInOutCubic", function() {
+			
+			if (in_article) {
+				$('#product-navbar-collapse').css('opacity', '1');
+				//$('.knightlab-logo img').attr('src', '../css/knightlab-logo-diamond-190.png');
+				$('#navbar').addClass('in-article');
+				$('#navbar').css('marginTop', '-56px');
+				$("#navbar").animate({
+					marginTop:"0px",
+					opacity:"1"
+				}, _speed, "easeInOutCubic");
+			} else {
+				if (_is_index) {
+					$('#product-navbar-collapse').css('opacity', '0');
+				} else {
+					$('#product-navbar-collapse').css('opacity', '1');
+				}
+				//$('img.knightlab-logo').attr('src', '../css/kngihtlab-logo-NOtagline.png');
+				//$('.knightlab-logo img').attr('src', '../css/knightlab-logo-diamond-190.png');
+				$('#navbar').removeClass('in-article');
+				$('#navbar').css('opacity', '0');
+				$('#navbar').css('marginTop', '0');
+				$("#navbar").animate({
+					opacity:"1"
+				}, _speed*2, "easeInOutCubic");
+			}
+			
+
+  
+		});
+		
+	}
 });
 
 /* Trace (console.log)
