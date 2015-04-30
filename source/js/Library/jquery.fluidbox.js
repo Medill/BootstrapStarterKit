@@ -146,7 +146,6 @@ var customTransitionEnd = whichTransitionEvent();
 						// If shorter, preserve smaller height
 						fHeight = $data.natHeight;
 					} else {
-						//fHeight = $w.height()*settings.viewportFill;
 						fHeight = _window.height*settings.viewportFill;
 					}
 
@@ -179,17 +178,7 @@ var customTransitionEnd = whichTransitionEvent();
 					offsetX = 0.5*($img.data('imgWidth')*($img.data('imgScale')-1))+0.5*($w.width()-$img.data('imgWidth')*$img.data('imgScale'))-$img.offset().left,
 					scale = parseInt($data.imgScaleX * 1000) / 1000 + ',' + parseInt($data.imgScaleY * 1000) / 1000;
 					
-					trace($w)
-					trace($w.height())
-					trace(_window.height)
-				trace("offsetY" + offsetY)
-					trace($w.scrollTop());
-					trace($img.offset().top)
-					trace($img.data('imgHeight'))
-					trace($img.data('imgScale'))
-					trace($w.height())
-					trace($img.data('imgHeight'))
-					trace($img.data('imgScale'))
+
 				// Apply CSS transforms to ghost element
 				// For offsetX and Y:	round to one decimal place
 				// For scale: 			round to three decimal places
@@ -209,7 +198,7 @@ var customTransitionEnd = whichTransitionEvent();
 			},
 			funcCalc = function ($fbItem) {
 				// Get viewport ratio
-				vpRatio = $w.width() / $w.height();
+				vpRatio = $w.width() / window.innerHeight;
 
 				// Get image dimensions and aspect ratio
 				if($fbItem.hasClass('fluidbox')) {
@@ -237,7 +226,7 @@ var customTransitionEnd = whichTransitionEvent();
 
 						// Calculate scale based on orientation
 						if(vpRatio > data.imgRatio) {
-							data.imgScale = $w.height()*settings.viewportFill/$img.height();
+							data.imgScale = window.innerHeight*settings.viewportFill/$img.height();
 						} else {
 							data.imgScale = $w.width()*settings.viewportFill/$img.width();
 						}						

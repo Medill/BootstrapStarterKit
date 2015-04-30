@@ -5856,7 +5856,6 @@ blockquote {
   color: #222222;
 }
 blockquote p {
-  text-align: center;
   margin: 0;
 }
 blockquote p:before {
@@ -6258,6 +6257,15 @@ header.navigation .divider-vertical {
 }
 .navbar {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar.navbar-default {
+  background-color: transparent;
+}
+.navbar.navbar-default .navbar-brand {
+  color: #FFF;
+}
+.navbar.navbar-default .navbar-nav > li > a {
+  color: #FFF;
 }
 #navbar-story {
   z-index: 1;
