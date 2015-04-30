@@ -56,6 +56,17 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
+	"\/source\/jade\/index_test.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/jade\/index_test.jade",
+		"outputAbbreviatedPath": "\/compiled\/index_test.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
 	"\/source\/jade\/old\/css.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -162,28 +173,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/sections\/carousel.jade",
 		"outputAbbreviatedPath": "\/source\/jade\/sections\/carousel.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/source\/jade\/sections\/footer.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/sections\/footer.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/sections\/footer.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0
-		},
-	"\/source\/jade\/sections\/navbar.jade": {
-		"compileDebug": 1,
-		"fileType": 512,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/jade\/sections\/navbar.jade",
-		"outputAbbreviatedPath": "\/source\/jade\/sections\/navbar.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
@@ -370,6 +359,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/jquery.fluidbox.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/min\/jquery.fluidbox-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/source\/js\/Library\/jquery.fluidbox.old.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/js\/Library\/jquery.fluidbox.old.js",
+		"outputAbbreviatedPath": "\/source\/js\/Library\/min\/jquery.fluidbox.old-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

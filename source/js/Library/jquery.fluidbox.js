@@ -129,7 +129,11 @@ var customTransitionEnd = whichTransitionEvent();
 					$wrap	= $activeFb.find('.fluidbox-wrap'),
 					$data	= $activeFb.data(),
 					fHeight = 0,
-					fWidth	= 0;
+					fWidth	= 0,
+					_window = {
+						height: window.innerHeight,
+						width: window.innerWidth
+					};
 
 				// Calculate aspect ratio				
 				$img.data().imgRatio = $data.natWidth/$data.natHeight;
@@ -142,7 +146,8 @@ var customTransitionEnd = whichTransitionEvent();
 						// If shorter, preserve smaller height
 						fHeight = $data.natHeight;
 					} else {
-						fHeight = $w.height()*settings.viewportFill;
+						//fHeight = $w.height()*settings.viewportFill;
+						fHeight = _window.height*settings.viewportFill;
 					}
 
 					// Calculate how much to scale along the y-axis
@@ -170,17 +175,29 @@ var customTransitionEnd = whichTransitionEvent();
 				}	
 
 				// Magic happens right here... okay, not really. Just really fizzy calculations
-				var offsetY = $w.scrollTop()-$img.offset().top+0.5*($img.data('imgHeight')*($img.data('imgScale')-1))+0.5*($w.height()-$img.data('imgHeight')*$img.data('imgScale')),
+				var offsetY = $w.scrollTop()-$img.offset().top + 0.5*($img.data('imgHeight')*($img.data('imgScale')-1))+0.5*(_window.height-$img.data('imgHeight')*$img.data('imgScale')),
 					offsetX = 0.5*($img.data('imgWidth')*($img.data('imgScale')-1))+0.5*($w.width()-$img.data('imgWidth')*$img.data('imgScale'))-$img.offset().left,
 					scale = parseInt($data.imgScaleX * 1000) / 1000 + ',' + parseInt($data.imgScaleY * 1000) / 1000;
-
+					
+					trace($w)
+					trace($w.height())
+					trace(_window.height)
+				trace("offsetY" + offsetY)
+					trace($w.scrollTop());
+					trace($img.offset().top)
+					trace($img.data('imgHeight'))
+					trace($img.data('imgScale'))
+					trace($w.height())
+					trace($img.data('imgHeight'))
+					trace($img.data('imgScale'))
 				// Apply CSS transforms to ghost element
 				// For offsetX and Y:	round to one decimal place
 				// For scale: 			round to three decimal places
+					
 				$ghost
 				.add($loader)
 				.css({
-					'transform': 'translate('+parseInt(offsetX*10)/10+'px,'+parseInt(offsetY*10)/10+'px) scale('+ scale +')',
+					'transform': 'translate(' + parseInt(offsetX*10)/10 + 'px,' + parseInt(offsetY*10)/10 + 'px) scale(' + scale + ')',
 					top: $img.offset().top - $wrap.offset().top,
 					left: $img.offset().left - $wrap.offset().left
 				});

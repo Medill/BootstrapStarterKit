@@ -30,6 +30,7 @@
 
 
 
+
 $(document).ready(function(){
 	
 	var _speed = 500,
@@ -50,9 +51,20 @@ $(document).ready(function(){
 	/*	LAZY LOAD AND ZOOMABLE IMAGES
 	================================================== */
 	// Find Images and make them zoomable
-	function makeImagesZoomable() { 
+	function makeImagesZoomable() {
+		
+		/*	Laziest Loader
+		================================================== */
+		$("img").laziestloader();
+	 
+		$('img').load(function() {
+			this.style.opacity = 1;
+		});
 		
 		$( "figure" ).each(function(figure) {
+			trace($(this).scrollTop());
+			trace($(this).position());
+			
 			if ($(this).find( "a img" ).length ) {
 				
 			} else {
@@ -62,7 +74,8 @@ $(document).ready(function(){
 					
 					
 				img_url = $(this).find("img").attr("data-src");
-				
+				trace($(this).find("img").position())
+				trace($(this).find("img").offset())
 				if (img_url == undefined) {
 					img_url = $(this).find("img").attr("src");
 				}
@@ -77,16 +90,10 @@ $(document).ready(function(){
 			}
 		});
 		
+		 
 		
 		
 		
-		/*	Laziest Loader
-		================================================== */
-		$("img").laziestloader();
-	 
-		$('img').load(function() {
-			this.style.opacity = 1;
-		});
 		
 		$('.enlarge').fluidbox({
 		 	viewportFill:0.85
