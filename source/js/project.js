@@ -10,21 +10,20 @@
 
 
 // BOOTSTRAP
-	// @codekit-prepend "Library/bootstrap/source/bootstrap/transition.js";
-	// @codekit-prepend "Library/bootstrap/source/bootstrap/scrollspy.js";
-	// @codekit-prepend "Library/bootstrap/source/bootstrap/tab.js";
-	// @codekit-prepend "Library/bootstrap/source/bootstrap/tooltip.js";
-	// @codekit-prepend "Library/bootstrap/source/bootstrap/carousel.js";
-	// @codekit-prepend "Library/bootstrap/source/bootstrap/collapse.js";
-	// @codekit-prepend "Library/bootstrap/source/bootstrap/modal.js";
-	// @codekit-prepend "Library/bootstrap/source/bootstrap/dropdown.js";
-	// @codekit-prepend "Library/bootstrap/source/bootstrap/affix.js";
+	// @codekit-prepend "Library/bootstrap/transition.js";
+	// @codekit-prepend "Library/bootstrap/scrollspy.js";
+	// @codekit-prepend "Library/bootstrap/tab.js";
+	// @codekit-prepend "Library/bootstrap/tooltip.js";
+	// @codekit-prepend "Library/bootstrap/carousel.js";
+	// @codekit-prepend "Library/bootstrap/collapse.js";
+	// @codekit-prepend "Library/bootstrap/modal.js";
+	// @codekit-prepend "Library/bootstrap/dropdown.js";
+	// @codekit-prepend "Library/bootstrap/affix.js";
 
 // JQUERY PLUGINS
 	// @codekit-prepend "Library/jquery.smooth-scroll.js";
 	// @codekit-prepend "Library/jquery.easing.1.3.js";
-	// @codekit-prepend "Library/waypoints.js";
-	// @codekit-prepend "Library/waypoints-sticky.js";
+	// @codekit-prepend "Library/jquery.waypoints.js";
 	// @codekit-prepend "Library/jquery.fluidbox.js"; 
 	// @codekit-prepend "Library/jquery.laziestloader.js";
 
@@ -40,8 +39,7 @@ $(document).ready(function(){
 		_path = "../",
 		_is_index = false;
 		
-	
-	
+
 	/*	Smooth Scroll
 	================================================== */
 	$('a').smoothScroll({
@@ -62,8 +60,6 @@ $(document).ready(function(){
 		});
 		
 		$( "figure" ).each(function(figure) {
-			trace($(this).scrollTop());
-			trace($(this).position());
 			
 			if ($(this).find( "a img" ).length ) {
 				
@@ -74,8 +70,7 @@ $(document).ready(function(){
 					
 					
 				img_url = $(this).find("img").attr("data-src");
-				trace($(this).find("img").position())
-				trace($(this).find("img").offset())
+
 				if (img_url == undefined) {
 					img_url = $(this).find("img").attr("src");
 				}
@@ -91,10 +86,43 @@ $(document).ready(function(){
 		});
 		
 		$('.enlarge').fluidbox({
-		 	viewportFill:0.8
-		});
+		 	viewportFill:0.8,
+			stackIndex: 1040
+		})
+		.on('openstart', fluidboxOpen)
+		.on('closestart', fluidboxClose);
+
 		
 	}
+	
+	/*	Fluidbox Events
+	================================================== */
+	function fluidboxOpen() {
+		trace("open");
+		navbarToggle(false);
+	};
+	
+	function fluidboxClose() {
+		trace("close");
+		navbarToggle(true);
+	};
+	
+	function navbarToggle(show) {
+		var animate_props = {
+			
+		}
+		if (show) {
+			animate_props.opacity = "1";
+			animate_props.marginTop = "0";
+		} else {
+			animate_props.opacity = "1";
+			animate_props.marginTop = "-150px";
+		}
+		
+		$("#navbar").animate(animate_props, _speed/2, "easeInOutCubic", function() {
+			
+		});
+	};
 	
 	/*	STORY COVER
 	================================================== */
@@ -124,7 +152,7 @@ $(document).ready(function(){
 				}
 			 
 			},
-			offset:100
+			offset:200
 		});
 		
 		$('.story-cover-arrow').click(function() {
@@ -199,6 +227,7 @@ $(document).ready(function(){
 		});
 		
 	}
+	
 });
 
 /* Trace (console.log)

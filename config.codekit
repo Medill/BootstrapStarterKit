@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "18911",
+"creatorBuild": "18917",
 "files": {
 	"\/README.md": {
 		"criticStyle": 0,
@@ -201,7 +201,7 @@
 		},
 	"\/source\/js\/Library\/bootstrap\/affix.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/affix.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/min\/affix-min.js",
@@ -234,7 +234,7 @@
 		},
 	"\/source\/js\/Library\/bootstrap\/carousel.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/carousel.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/min\/carousel-min.js",
@@ -245,7 +245,7 @@
 		},
 	"\/source\/js\/Library\/bootstrap\/collapse.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/collapse.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/min\/collapse-min.js",
@@ -256,7 +256,7 @@
 		},
 	"\/source\/js\/Library\/bootstrap\/dropdown.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/dropdown.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/min\/dropdown-min.js",
@@ -267,7 +267,7 @@
 		},
 	"\/source\/js\/Library\/bootstrap\/modal.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/modal.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/min\/modal-min.js",
@@ -289,7 +289,7 @@
 		},
 	"\/source\/js\/Library\/bootstrap\/scrollspy.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/scrollspy.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/min\/scrollspy-min.js",
@@ -300,7 +300,7 @@
 		},
 	"\/source\/js\/Library\/bootstrap\/tab.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/tab.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/min\/tab-min.js",
@@ -311,7 +311,7 @@
 		},
 	"\/source\/js\/Library\/bootstrap\/tooltip.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/tooltip.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/min\/tooltip-min.js",
@@ -322,7 +322,7 @@
 		},
 	"\/source\/js\/Library\/bootstrap\/transition.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/transition.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/bootstrap\/min\/transition-min.js",
@@ -397,9 +397,20 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/source\/js\/Library\/waypoints-sticky.js": {
+	"\/source\/js\/Library\/jquery.waypoints.js": {
 		"fileType": 64,
 		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/source\/js\/Library\/jquery.waypoints.js",
+		"outputAbbreviatedPath": "\/source\/js\/Library\/min\/jquery.waypoints-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/source\/js\/Library\/waypoints-sticky.js": {
+		"fileType": 64,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/js\/Library\/waypoints-sticky.js",
 		"outputAbbreviatedPath": "\/source\/js\/Library\/min\/waypoints-sticky-min.js",
@@ -408,12 +419,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/source\/js\/Library\/waypoints.js": {
+	"\/source\/js\/Library\/waypoints.old.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/js\/Library\/waypoints.js",
-		"outputAbbreviatedPath": "\/source\/js\/Library\/min\/waypoints-min.js",
+		"inputAbbreviatedPath": "\/source\/js\/Library\/waypoints.old.js",
+		"outputAbbreviatedPath": "\/source\/js\/Library\/min\/waypoints.old-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -2070,26 +2081,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/source\/less\/custom\/navbar-product.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/less\/custom\/navbar-product.less",
-		"outputAbbreviatedPath": "\/source\/less\/css\/navbar-product.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
 	"\/source\/less\/custom\/navbar-quiet.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -2100,26 +2091,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/less\/custom\/navbar-quiet.less",
 		"outputAbbreviatedPath": "\/source\/less\/css\/navbar-quiet.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
-	"\/source\/less\/custom\/navbar-story.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/source\/less\/custom\/navbar-story.less",
-		"outputAbbreviatedPath": "\/source\/less\/css\/navbar-story.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
