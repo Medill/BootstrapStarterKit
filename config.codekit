@@ -180,7 +180,7 @@
 	"\/source\/jade\/sections\/subnav.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/source\/jade\/sections\/subnav.jade",
 		"outputAbbreviatedPath": "\/source\/jade\/sections\/subnav.html",
