@@ -1,6 +1,7 @@
 # Bootstrap Starter Kit
 ## See it
 [See it in action here](http://medill.github.io/BootstrapStarterKit/)
+[Typography Specimen Sheet](http://medill.github.io/BootstrapStarterKit/typography.html)
 ##Included Javascript
 * [Laziest Loader Library](http://sjwilliams.github.io/laziestloader/)
 * [Fluidbox](http://terrymun.github.io/Fluidbox/)
