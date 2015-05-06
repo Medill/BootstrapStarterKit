@@ -24,6 +24,46 @@ html(lang="en")
 		link(rel='shortcut icon', href='img/ico/favicon.png')
 		link(rel='apple-touch-icon-precomposed', href='img/ico/favicon.png')
 		link(rel='apple-touch-icon-precomposed', href='img/ico/apple-touch-icon-144.png', sizes="144x144")
+		
+		// Fonts
+		// To test fonts import them below and set them in the style tag
+		link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic')
+		link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Patua+One')
+		
+		style.
+			body {
+				font-family: 'Lora', serif;
+				font-weight:400;
+			}
+			blockquote, blockquote p {
+				font-family: 'Lora', serif;
+				font-weight:100;
+				font-style: italic;
+			}
+			blockquote cite {
+				font-family: 'Lora', serif;
+				font-weight:400;
+				font-style: normal;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				font-family: 'Patua One', cursive;
+				font-weight:400;
+			}
+			pre code {
+				font-size:12px;
+			}
+			pre {
+				margin-top: -16px;
+				margin-right: 0;
+				margin-left: 0;
+				border-width: 1px;
+				border-bottom-right-radius: 4px;
+				border-bottom-left-radius: 4px;
+			    padding: 9px 14px;
+			    background-color: #f7f7f9;
+			    border: 1px solid #e1e1e8;
+			}
+			
 
 	body
 		
@@ -33,6 +73,27 @@ html(lang="en")
 					div.col-md-3
 					div.col-md-6
 						h1 Typography
+						p To test out font faces, add them to the head of this document and change the <code>&lt;style&gt;</code> tag.
+						p
+							pre
+								code. 
+									&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://fonts.googleapis.com/css?family=Lora:400,700,400italic&quot;/&gt; 
+									&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://fonts.googleapis.com/css?family=Patua+One&quot;/&gt; 
+									&lt;style&gt; 
+										body { 
+											font-family: 'Lora', serif; 
+											font-weight:400;
+										} 
+										blockquote, blockquote p {
+											font-family: 'Lora', serif; font-weight:100; font-style: italic;
+										} 
+										blockquote cite {
+											font-family: 'Lora', serif; font-weight:400; font-style: normal;
+										} 
+										h1, h2, h3, h4, h5, h6 {
+											font-family: 'Patua One', cursive; font-weight:400;
+										} 
+									&lt;/style&gt;
 
 			section.container-fluid.bs-example-section
 				div.row
@@ -50,7 +111,7 @@ html(lang="en")
 							h5 h5. Heading
 							h6 h6. Heading
 
-						p Create lighter, secondary text in any heading with a generic <small> tag or the .small class.
+						p Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the .small class.
 
 						div.bs-example
 
