@@ -27,27 +27,47 @@ html(lang="en")
 		
 		// Fonts
 		// To test fonts import them below and set them in the style tag
-		link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic')
-		link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Patua+One')
+		link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Raleway:500,100,900')
+		link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,700')
 		
 		style.
 			body {
-				font-family: 'Lora', serif;
+				font-family: 'Merriweather', serif;
 				font-weight:400;
 			}
 			blockquote, blockquote p {
-				font-family: 'Lora', serif;
-				font-weight:100;
+				font-family: 'Merriweather', serif;
+				font-weight:300;
 				font-style: italic;
 			}
 			blockquote cite {
-				font-family: 'Lora', serif;
-				font-weight:400;
+				font-family: 'Merriweather', serif;
+				font-weight:300;
 				font-style: normal;
 			}
 			h1, h2, h3, h4, h5, h6 {
-				font-family: 'Patua One', cursive;
-				font-weight:400;
+				font-family: 'Raleway', sans-serif;
+				font-weight:900;
+			}
+			h1 {
+				font-weight:100;
+				font-size: 60px;
+				line-height: 60px;
+			}
+			p.lead {
+				font-family: 'Merriweather', serif;
+				font-weight:300;
+			}
+			.btn {
+				font-family: 'Raleway', sans-serif;
+				font-weight:500;
+			}
+			b, strong {
+				font-weight:700;
+			}
+			i, cite, em, var, address, dfn {
+				font-weight:300;
+				font-style: italic;
 			}
 			pre code {
 				font-size:12px;
@@ -146,6 +166,13 @@ html(lang="en")
 						p Make a paragraph stand out by adding <code>.lead</code>.
 						div.bs-example
 							p.lead Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+
+							p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. 
+
+							p Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna.
+
+							p Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. 
+							
 
 			section.container-fluid.bs-example-section
 				div.row
